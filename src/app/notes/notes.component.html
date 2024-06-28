@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>My Notes</h2>
+  <div class="mb-3">
+    <button class="btn btn-success" (click)="addNote()">Add Note</button>
+  </div>
+  <div class="list-group">
+    <div class="list-group-item" *ngFor="let note of notes">
+      <div class="d-flex justify-content-between">
+        <div>
+          <h5>{{ note.title }}</h5>
+          <p>{{ note.content }}</p>
+        </div>
+        <div>
+          <button class="btn btn-secondary" (click)="toggleStatus(note)">{{ note.status === 'pending' ? 'Complete' : 'Reopen' }}</button>
+          <button class="btn btn-danger" (click)="deleteNote(note)">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

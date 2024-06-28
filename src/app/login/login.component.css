@@ -1,0 +1,19 @@
+/* Estilos para el componente de login */
+div {
+    margin: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+  }
+  
